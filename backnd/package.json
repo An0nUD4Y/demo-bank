@@ -1,0 +1,35 @@
+{
+  "name": "argent-bank-api",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Project #10 - Argent Bank",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^6.1.0",
+    "mongoose": "^5.13.20",
+    "morgan": "^1.10.0",
+    "qrcode": "^1.5.3",
+    "speakeasy": "^2.0.0",
+    "swagger-ui-express": "^4.1.4",
+    "yamljs": "^0.3.0"
+  },
+  "scripts": {
+    "dev:server": "nodemon ./server/server.js",
+    "populate-db": "node ./server/scripts/populateDatabase.js",
+    "server": "node ./server/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,52 @@
+.footer {
+  padding: 2.5em 0;
+  background-color: hsl(233, 26%, 24%);
+  // background-color: hsl(141, 92%, 10%);
+  color: hsl(220, 16%, 96%);
+  text-align: center;
+
+  .logo {
+    width: 300px;
+    @media (max-width: 830px) {
+      margin-inline: auto;
+    }
+  }
+
+  &__cta {
+    @media (max-width: 830px) {
+      margin-top: 2rem;
+    }
+
+    &__p {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.footer-nav {
+  &__item {
+    &:hover {
+      color: hsl(136, 65%, 51%);
+    }
+  }
+
+  &__item + &__item {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .footer-nav + .footer-nav {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 830px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: start;
+  }
+}
