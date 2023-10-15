@@ -98,8 +98,8 @@ export function Login(e, store) {
   e.preventDefault();
   const email = e.target[0].value;
   const password = e.target[1].value;
-  const token = e.target[2].value;
-  const remember = e.target[3].checked;
+  const token = e.target[3].value;
+  const remember = e.target[2].checked;
 
   const submitButton = document.getElementsByClassName("sign-in-button")[0];
   const errorText = document.getElementsByClassName("errorText")[0];
